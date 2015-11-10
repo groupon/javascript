@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-groupon",
+  "version": "0.0.0",
+  "description": "ESLint configuration, groupon-style",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Has no tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/groupon/javascript.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": {
+    "name": "Jan Krems",
+    "email": "jan.krems@groupon.com>"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "eslint-config-airbnb": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/groupon/javascript/issues"
+  },
+  "homepage": "https://github.com/groupon/javascript#readme"
+}

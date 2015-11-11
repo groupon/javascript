@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/groupon/javascript/issues"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "homepage": "https://github.com/groupon/javascript#readme"
 }

@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '4'
+install:
+  - 'cd linters/eslint-config-groupon && npm install'
+script:
+  - 'cd linters/eslint-config-groupon && npm test'

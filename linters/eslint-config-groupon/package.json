@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "ESLint configuration, groupon-style",
   "main": "index.js",
+  "files": [
+    "base.js",
+    "index.js",
+    "legacy.js"
+  ],
   "scripts": {
-    "test": "echo \"Has no tests\""
+    "test": "./test/lint.sh test/base"
   },
   "repository": {
     "type": "git",
@@ -20,6 +25,7 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
+    "babel-eslint": "^4.1.5",
     "eslint-config-airbnb": "^1.0.0"
   },
   "bugs": {
@@ -28,5 +34,8 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "homepage": "https://github.com/groupon/javascript#readme"
+  "homepage": "https://github.com/groupon/javascript#readme",
+  "devDependencies": {
+    "eslint": "^1.9.0"
+  }
 }

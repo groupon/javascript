@@ -26,6 +26,13 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 module.exports = {
   extends: [
-    'eslint-config-airbnb',
+    // ESLint will resolve all references relative to the app,
+    // not relative to our package.
+    // We use require.resolve to get absolute paths which will
+    // always point to the right place.
+    require.resolve('./base'),
+    require.resolve('eslint-config-airbnb/rules/react'),
   ],
+  // eslint's own parser doesn't support async functions
+  parser: require.resolve('babel-eslint')
 };

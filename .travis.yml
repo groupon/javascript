@@ -4,4 +4,4 @@ node_js:
 install:
   - 'cd linters/eslint-config-groupon && npm install'
 script:
-  - 'cd linters/eslint-config-groupon && npm test'
+  - 'npm test'

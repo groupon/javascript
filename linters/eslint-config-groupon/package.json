@@ -9,7 +9,7 @@
     "legacy.js"
   ],
   "scripts": {
-    "test": "./test/lint.sh test/base"
+    "test": "./test/lint.sh test/base && ./test/lint.sh test/legacy"
   },
   "repository": {
     "type": "git",

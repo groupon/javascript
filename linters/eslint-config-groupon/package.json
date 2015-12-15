@@ -26,7 +26,7 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "babel-eslint": "^4.1.5",
-    "eslint-config-airbnb": "^1.0.0"
+    "eslint-config-airbnb": "^2.1.0"
   },
   "bugs": {
     "url": "https://github.com/groupon/javascript/issues"

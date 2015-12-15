@@ -30,8 +30,7 @@ module.exports = {
     // not relative to our package.
     // We use require.resolve to get absolute paths which will
     // always point to the right place.
-    require.resolve('./legacy'),
-    require.resolve('eslint-config-airbnb/rules/es6'),
+    require.resolve('eslint-config-airbnb/base'),
   ],
   // eslint's own parser doesn't support async functions
   parser: require.resolve('babel-eslint')

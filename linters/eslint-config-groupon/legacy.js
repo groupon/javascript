@@ -30,26 +30,11 @@ module.exports = {
     // not relative to our package.
     // We use require.resolve to get absolute paths which will
     // always point to the right place.
-    require.resolve('eslint-config-airbnb/rules/best-practices'),
-    require.resolve('eslint-config-airbnb/rules/errors'),
-    require.resolve('eslint-config-airbnb/rules/legacy'),
-    require.resolve('eslint-config-airbnb/rules/node'),
-    require.resolve('eslint-config-airbnb/rules/strict'),
-    require.resolve('eslint-config-airbnb/rules/style'),
-    require.resolve('eslint-config-airbnb/rules/variables')
+    require.resolve('eslint-config-airbnb/legacy'),
   ],
-  'env': {
-    'browser': true,
-    'node': true,
-    'amd': false,
-    'mocha': false,
-    'jasmine': false
-  },
-  'ecmaFeatures': {},
-  'globals': {},
   'rules': {
     'vars-on-top': 0,
-    'strict': [ 2, 'global' ],
+    'strict': [2, 'global'],
     'no-param-reassign': 0,
   }
 };

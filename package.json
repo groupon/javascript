@@ -1,0 +1,31 @@
+{
+  "name": "groupon-styleguide",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "pretest": "eslint test/valid",
+    "test": "mocha"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/groupon/javascript"
+  },
+  "author": {
+    "name": "Jan Krems",
+    "email": "jan.krems@groupon.com"
+  },
+  "dependencies": {
+    "eslint-config-groupon": "file:./linters/eslint-config-groupon",
+    "eslint-config-groupon-es5": "file:./linters/eslint-config-groupon-es5",
+    "eslint-config-groupon-react": "file:./linters/eslint-config-groupon-react",
+    "eslint-plugin-jsx-a11y": "^1.0.2",
+    "eslint-plugin-import": "^1.5.0",
+    "eslint-plugin-react": "^5.0.1"
+  },
+  "devDependencies": {
+    "assertive": "^2.1.1",
+    "eslint": "^2.8.0",
+    "mocha": "^2.4.5"
+  }
+}

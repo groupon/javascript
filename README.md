@@ -9,7 +9,7 @@ It represents a best effort to capture the current practices.
 
 The general rule is:
 When writing code that is distributed via npm, we use ES5 code.
-All libraries should use `groupon/legacy`.
+All libraries should use `groupon-es5`.
 This ensures the code works consistently across all environments
 and doesn't require any compilation.
 
@@ -19,7 +19,7 @@ But in most cases it's possible to isolate that code
 into a separate library without polluting unrelated pieces of logic.
 
 For applications using ES2015 and [proposed upcoming features](https://github.com/tc39/ecma262#ecmascript) like object spread is encouraged.
-The default lint style should be `groupon/base` or `groupon` when using React.
+The default lint style should be `groupon` or `groupon-react` when using React.
 
 ### Versioning and Publishing
 
@@ -34,7 +34,7 @@ This ensures that:
 
 Fortunately there already is a great and well-documented style guide for JavaScript over at [airbnb/javascript](https://github.com/airbnb/javascript).
 The short answer is: We stick to that.
-There is no difference between the airbnb and the Groupon rules for anything but legacy mode.
+There is no difference between the airbnb and the Groupon rules for anything but legacy/ES5 mode.
 
 ### The Longer Answer
 
@@ -53,11 +53,11 @@ Examples:
 When writing or reviewing code the rule of thumb is "clarity over brevity".
 But a linter isn't in the best position to judge clarity.
 
-#### `groupon/legacy`
+#### `groupon-es5`
 
 ##### Strict Statements
 
-We assume legacy mode is used to lint code that will be running on node.js without any compilation steps.
+We assume ES5 mode is used to lint code that will be running on node.js without any compilation steps.
 Which means we enforce a top-level `'use strict'` statement.
 
 ##### Param reassignment is allowed

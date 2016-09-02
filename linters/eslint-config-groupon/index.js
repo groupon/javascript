@@ -34,4 +34,10 @@ module.exports = {
   ],
   // eslint's own parser doesn't support async functions
   parser: require.resolve('babel-eslint'),
+  'rules': {
+    'no-param-reassign': 0,
+    'no-underscore-dangle': [2, { allowAfterThis: true }],
+    'strict': [2, 'global'],
+    'vars-on-top': 0,
+  },
 };

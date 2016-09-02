@@ -45,6 +45,20 @@ There is no difference between the airbnb and the Groupon rules for anything but
 
 #### Generally
 
+##### `no-underscore-dangle`
+
+Opinions on what "private state" means and how to use it vary.
+The [Airbnb guide](https://github.com/airbnb/javascript#naming--leading-underscore) comes down on the side of "if something can be inspected, it's not truly private".
+We explicitly allow and even encourage the use of underscored properties for private state.
+
+1. It's hard to define "can be inspected" in JavaScript, especially in node (there's always `vm.runInDebugContext`).
+2. There's immense value in having private state inspectable while debugging certain issues.
+
+We trust that users of libraries are aware that underscored properties are never part of the official interface
+and changes to underscored properties are not considered breaking changes.
+
+Using underscored properties outside of methods (e.g. not on `this`) is still considered an error.
+
 ##### Short Identifiers
 
 The airbnb config allows identifiers of any length.

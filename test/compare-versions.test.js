@@ -6,6 +6,7 @@ var ROOT_PKG = require('../package.json');
 var LINT_PKGS = [
   'groupon',
   'groupon-es5',
+  'groupon-node4',
   'groupon-react',
 ].map(function (linter) {
   return require('../linters/eslint-config-' + linter + '/package.json');

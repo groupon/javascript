@@ -21,10 +21,10 @@ into a separate library without polluting unrelated pieces of logic.
 For client-side code using ES2015 and [proposed upcoming features](https://github.com/tc39/ecma262#ecmascript) like object spread is encouraged.
 The default lint style should be `groupon` or `groupon-react` when using React.
 
-For server-side code running on node 4 or higher,
+For server-side code running on node 4.x/6.x or higher,
 we try to restrict ourselves to the features that are natively supported.
 This simplifies tooling and improves startup times.
-The default lint style should be `groupon-node4`.
+The default lint style should be `groupon-node4`/`groupon-node6`.
 
 ### Versioning and Publishing
 

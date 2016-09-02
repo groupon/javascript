@@ -1,6 +1,6 @@
 {
   "name": "groupon-styleguide",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "scripts": {
     "pretest": "eslint test/valid",
@@ -19,6 +19,7 @@
     "eslint-config-groupon": "file:./linters/eslint-config-groupon",
     "eslint-config-groupon-es5": "file:./linters/eslint-config-groupon-es5",
     "eslint-config-groupon-node4": "file:./linters/eslint-config-groupon-node4",
+    "eslint-config-groupon-node6": "file:./linters/eslint-config-groupon-node6",
     "eslint-config-groupon-react": "file:./linters/eslint-config-groupon-react",
     "eslint-plugin-jsx-a11y": "^1.0.2",
     "eslint-plugin-import": "^1.7.0",

@@ -33,8 +33,9 @@ module.exports = {
     require.resolve('eslint-config-airbnb-base/legacy'),
   ],
   'rules': {
-    'vars-on-top': 0,
-    'strict': [2, 'global'],
     'no-param-reassign': 0,
+    'no-underscore-dangle': [2, { allowAfterThis: true }],
+    'strict': [2, 'global'],
+    'vars-on-top': 0,
   },
 };

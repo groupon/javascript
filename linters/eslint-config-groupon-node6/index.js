@@ -42,8 +42,7 @@ module.exports = {
     },
   },
   rules: {
-    'node/no-unsupported-features': [2, { version: 4 }],
-    'no-param-reassign': 0,
+    'node/no-unsupported-features': [2, { version: 6 }],
     'no-underscore-dangle': [2, { allowAfterThis: true }],
     strict: [2, 'global'],
   }

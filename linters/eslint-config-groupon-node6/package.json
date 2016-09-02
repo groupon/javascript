@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-groupon",
+  "name": "eslint-config-groupon-node6",
   "version": "3.1.0",
   "description": "ESLint configuration, groupon-style",
   "main": "index.js",
@@ -20,8 +20,7 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "babel-eslint": "^6.0.0",
-    "eslint-config-airbnb-base": "^1.0.3"
+    "eslint-config-airbnb-base": "^3.0.0"
   },
   "bugs": {
     "url": "https://github.com/groupon/javascript/issues"
@@ -32,6 +31,7 @@
   "homepage": "https://github.com/groupon/javascript#readme",
   "peerDependencies": {
     "eslint": "^2.8.0",
-    "eslint-plugin-import": "^1.5.0"
+    "eslint-plugin-import": "^1.5.0",
+    "eslint-plugin-node": "^2.0.0"
   }
 }

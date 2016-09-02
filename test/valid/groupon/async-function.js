@@ -1,8 +1,7 @@
-// babel-eslint and eslint don't play nice for this case:
-// https://github.com/eslint/eslint/issues/4442
-//
-// async function f() {
-// }
+async function f() {
+  return true;
+}
+f(); // no unused
 
 const g = async () => true;
 g(); // no unused

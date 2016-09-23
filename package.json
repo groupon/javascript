@@ -1,9 +1,9 @@
 {
   "name": "groupon-styleguide",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "private": true,
   "scripts": {
-    "pretest": "eslint test/valid",
+    "pretest": "eslint test/valid/eslint && coffeelint -q test/valid/coffeelint",
     "test": "mocha"
   },
   "license": "BSD-3-Clause",
@@ -16,6 +16,11 @@
     "email": "jan.krems@groupon.com"
   },
   "dependencies": {
+    "coffeelint-config-groupon": "file:./linters/coffeelint-config-groupon",
+    "coffeelint-forbidden-keywords": "~0.1.1",
+    "coffeelint-no-mocha-only": "^1.0.0",
+    "coffeelint-use-strict": "^1.0.0",
+    "coffeescope2": "~0.4.2",
     "eslint-config-groupon": "file:./linters/eslint-config-groupon",
     "eslint-config-groupon-es5": "file:./linters/eslint-config-groupon-es5",
     "eslint-config-groupon-node4": "file:./linters/eslint-config-groupon-node4",
@@ -28,6 +33,8 @@
   },
   "devDependencies": {
     "assertive": "^2.1.1",
+    "coffee-script": "^1.10.0",
+    "coffeelint": "^1.15.7",
     "eslint": "^2.9.0",
     "mocha": "^3.0.2"
   }

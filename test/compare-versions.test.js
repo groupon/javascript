@@ -4,13 +4,14 @@ var assert = require('assertive');
 var ROOT_PKG = require('../package.json');
 
 var LINT_PKGS = [
-  'groupon',
-  'groupon-es5',
-  'groupon-node4',
-  'groupon-node6',
-  'groupon-react',
+  'coffeelint-config-groupon',
+  'eslint-config-groupon',
+  'eslint-config-groupon-es5',
+  'eslint-config-groupon-node4',
+  'eslint-config-groupon-node6',
+  'eslint-config-groupon-react',
 ].map(function (linter) {
-  return require('../linters/eslint-config-' + linter + '/package.json');
+  return require('../linters/' + linter + '/package.json');
 });
 
 describe('package.json#version', function () {

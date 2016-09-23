@@ -91,7 +91,7 @@ function f(options) {
 }
 ```
 
-This should be limited to default paramters.
+This should be limited to default parameters.
 The following will pass the linter but should be avoided:
 
 ```js
@@ -114,3 +114,7 @@ function f() {
   var y = calcY();
 }
 ```
+
+#### `coffeescript`
+
+We include a single coffeelint config module - it allows globals appropriate for ES6, Mocha, and Node.JS coding.

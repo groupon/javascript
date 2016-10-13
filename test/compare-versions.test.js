@@ -10,6 +10,7 @@ var LINT_PKGS = [
   'eslint-config-groupon-node4',
   'eslint-config-groupon-node6',
   'eslint-config-groupon-react',
+  'stylint-config-groupon',
 ].map(function (linter) {
   return require('../linters/' + linter + '/package.json');
 });

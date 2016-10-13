@@ -19,11 +19,7 @@
     "error": true,
     "expect": "always"
   },
-  "duplicates": {
-    "error": true,
-    "expect": true
-  },
-  "globalDupes": true,
+  "duplicates": false,
   "indentPref": {
     "error": true,
     "expect": 2

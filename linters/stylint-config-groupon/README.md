@@ -129,18 +129,21 @@ we prefer single quotes for stylus as well.
 
 #### `duplicates`/`globalDupe`
 
-Only declare the same selector once per project.
-Use imports to share code between different entry files if necessary.
+It's a good practice to only define a selector/property combination once per project
+and to use `@import` if it's needed in different files.
+
+This rule may be broken to provide fallbacks:
 
 ```styl
 // Bad
-.container
-  margin: 10px
-  margin: 0
+.some-class
+  width: 920px
+  width: 100%
 
 // Good
-.container
-  margin: 0
+.some-class
+  width: 95% // old browser that dont know the calc property (I know this is a guess)
+  width: calc(100% - 10px) // modern browsers
 ```
 
 #### `noImportant`

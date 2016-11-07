@@ -152,3 +152,12 @@ Avoid `!important` at all costs.
 See: [How style precendence works][specificity].
 
 [specificity]: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+
+#### `@css`
+
+Some CSS features like certain media queries aren't handled well by stylus.
+In those cases CSS can be inlined via `@css` blocks or put into separate `.css` files.
+You should use `@import` and external CSS files.
+
+The reason for this rule isn't great - stylint just can't handle inline `@css` blocks properly.
+The good news is that you should rarely need to drop down to raw CSS.

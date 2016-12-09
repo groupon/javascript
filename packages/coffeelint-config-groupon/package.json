@@ -1,6 +1,6 @@
 {
   "name": "coffeelint-config-groupon",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "CoffeeLint configuration, groupon-style",
   "main": "index.js",
   "files": [

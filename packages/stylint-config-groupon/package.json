@@ -1,6 +1,6 @@
 {
   "name": "stylint-config-groupon",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "Stylint configuration, groupon-style",
   "main": "stylint.json",
   "files": [

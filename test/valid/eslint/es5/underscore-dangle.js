@@ -1,4 +1,5 @@
 'use strict';
+
 function MyClass() {
   this._prop = 'totally private';
 }

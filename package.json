@@ -25,16 +25,16 @@
     "eslint-config-groupon-node4": "file:./packages/eslint-config-groupon-node4",
     "eslint-config-groupon-node6": "file:./packages/eslint-config-groupon-node6",
     "eslint-config-groupon-react": "file:./packages/eslint-config-groupon-react",
-    "eslint-plugin-jsx-a11y": "^1.0.2",
-    "eslint-plugin-import": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^2.0.0",
-    "eslint-plugin-react": "^5.0.1",
+    "eslint-plugin-react": "^6.6.0",
     "stylint-config-groupon": "file:./packages/stylint-config-groupon"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "coffeelint": "^1.15.7",
-    "eslint": "^2.9.0",
+    "eslint": "^3.12.2",
     "stylint": "^1.5.7",
     "lerna": "2.0.0-beta.30"
   }

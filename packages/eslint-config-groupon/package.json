@@ -20,8 +20,8 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "babel-eslint": "^6.0.0",
-    "eslint-config-airbnb-base": "^1.0.3"
+    "babel-eslint": "^7.1.1",
+    "eslint-config-airbnb-base": "^11.0.0"
   },
   "bugs": {
     "url": "https://github.com/groupon/javascript/issues"
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/groupon/javascript#readme",
   "peerDependencies": {
-    "eslint": "^2.8.0",
-    "eslint-plugin-import": "^1.5.0"
+    "eslint": "^3.12.2",
+    "eslint-plugin-import": "^2.2.0"
   }
 }

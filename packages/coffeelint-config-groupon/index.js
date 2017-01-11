@@ -34,10 +34,9 @@ module.exports = {
   check_scope: {
     module: 'coffeescope2',
     level: 'error',
-    environments: ['node', 'es6', 'mocha'],
+    environments: ['node', 'es6', 'mocha', 'browser'],
     overwrite: false,
-    shadow_builtins: true,
-    shadow_exceptions: ['test'],
+    shadow_exceptions: ['err', 'error'],
     hoist_local: false
   },
   coffeescript_error: {
@@ -91,7 +90,9 @@ module.exports = {
   },
   newlines_after_classes: {
     value: 1,
-    level: 'warn'
+    // change to 'warn' when
+    // https://github.com/clutchski/coffeelint/issues/518 fixed
+    level: 'ignore'
   },
   no_backticks: {
     level: 'error'

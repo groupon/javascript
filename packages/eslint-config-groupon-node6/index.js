@@ -48,6 +48,7 @@ module.exports = {
     'comma-dangle': [2, {
       arrays: 'always-multiline',
       objects: 'always-multiline',
+      functions: 'never',
      }],
   }
 };

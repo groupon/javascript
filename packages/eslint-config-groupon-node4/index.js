@@ -51,6 +51,7 @@ module.exports = {
       arrays: 'always-multiline',
       objects: 'always-multiline',
       functions: 'never',
-     }],
+    }],
+    'prefer-spread': 0,
   }
 };

@@ -39,5 +39,10 @@ module.exports = {
     'no-underscore-dangle': [2, { allowAfterThis: true }],
     'strict': [2, 'global'],
     'vars-on-top': 0,
+    'comma-dangle': [2, {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      functions: 'never',
+    }],
   },
 };

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-groupon",
-  "version": "4.0.0",
+  "version": "4.1.4",
   "description": "ESLint configuration, groupon-style",
   "main": "index.js",
   "files": [

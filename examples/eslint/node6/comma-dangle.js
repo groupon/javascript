@@ -1,17 +1,17 @@
 'use strict';
 
-function foo() { }
+function foo() {}
 
 // no comma-dangle for functions
 foo(
-  1,
-  2
+  'some very long argument to force line break',
+  'another very long argument to force line break'
 );
 
 // yes comma-dangle for arrays/objects
 foo([
-  1,
-  2,
+  'some very long argument to force line break',
+  'another very long argument to force line break',
 ]);
 foo({
   x: 1,

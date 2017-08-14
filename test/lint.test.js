@@ -27,7 +27,12 @@ const GROUPS = [
         if (e.code !== 'ENOENT') throw e;
       }
 
-      assert.equal(first.errorCount, expected.errorCount);
+      try {
+        assert.equal(first.errorCount, expected.errorCount);
+      } catch (e) {
+        console.log(first.messages, expected.messages);
+        throw e;
+      }
 
       let expectedSource;
       try {
@@ -37,7 +42,7 @@ const GROUPS = [
         expectedSource = content;
       }
 
-      assert.equal(expectedSource, first.source || content);
+      assert.equal(expectedSource, first.output || content);
     },
   },
 ];

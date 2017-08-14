@@ -7,15 +7,21 @@ module.exports = {
   },
   plugins: [
     'node',
+    'prettier',
   ],
   rules: {
-    'node/no-unsupported-features': [2, { version: 6 }],
+    // Random stylistic choices
+    'prettier/prettier': ['error', {
+      singleQuote: true,
+      trailingComma: 'es5',
+    }],
+    'lines-around-directive': ['error', 'always'],
+
+    // Code convention
     'no-underscore-dangle': [2, { allowAfterThis: true }],
+
+    // Bug prevention
     strict: [2, 'global'],
-    'comma-dangle': [2, {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      functions: 'never',
-     }],
+    'node/no-unsupported-features': [2, { version: 6 }],
   }
 };

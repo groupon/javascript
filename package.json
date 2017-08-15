@@ -13,6 +13,10 @@
     "name": "Jan Krems",
     "email": "jan.krems@groupon.com"
   },
+  "files": [
+    "*.js",
+    "lib"
+  ],
   "dependencies": {
     "coffeelint-forbidden-keywords": "~0.1.1",
     "coffeelint-no-mocha-only": "^1.0.0",

@@ -10,6 +10,7 @@ module.exports = {
     sourceType: 'script',
   },
   plugins: [
+    'import',
     'node',
     'prettier',
   ],
@@ -20,11 +21,12 @@ module.exports = {
       trailingComma: 'es5',
     }],
     'lines-around-directive': ['error', 'always'],
+    'import/newline-after-import': 'error',
 
     // Code convention
     'no-underscore-dangle': [2, { allowAfterThis: true }],
-    // TODO: Make sure it will be auto-fixed
-    'no-undef-init': 'error',
+    'no-undef-init': 'off', // pending: Can't be auto-fixed
+    'import/no-dynamic-require': 'off', // pending: Can't be auto-fixed
 
     // Bug prevention
     strict: [2, 'global'],
@@ -43,5 +45,35 @@ module.exports = {
     'no-label-var': 'error',
     'no-delete-var': 'error',
     'no-catch-shadow': 'off',
+
+    'import/no-unresolved': ['error', { commonjs: true, caseSensitive: true }],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: [
+        'test/**', // tape, common npm pattern
+        'tests/**', // also common npm pattern
+        'spec/**', // mocha, rspec-like pattern
+        '**/__tests__/**', // jest pattern
+        'test.{js,jsx}', // repos with a single test file
+        'test-*.{js,jsx}', // repos with multiple top-level test files
+        '**/*.{test,spec}.{js,jsx}', // tests where the extension denotes that it is a test
+        '**/jest.config.js', // jest config
+        '**/webpack.config.js', // webpack config
+        '**/webpack.config.*.js', // webpack config
+        '**/rollup.config.js', // rollup config
+        '**/rollup.config.*.js', // rollup config
+        '**/gulpfile.js', // gulp config
+        '**/gulpfile.*.js', // gulp config
+        '**/Gruntfile{,.js}', // grunt config
+        '**/protractor.conf.*.js', // protractor config
+
+        // Allow script & example files
+        'scripts/**',
+        'tasks/**',
+        'examples/**',
+        'example/**',
+      ],
+      optionalDependencies: true, // allow optional deps to be required
+    }],
+    'import/no-duplicates': 'error',
   }
 };

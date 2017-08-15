@@ -9,6 +9,7 @@ const { promisify } = require('util');
 const coffeelint = require('coffeelint');
 const globby = require('globby');
 const CLIEngine = require('eslint').CLIEngine;
+const initStylint = require('stylint');
 
 const CoffeeConfig = require('../coffee');
 
@@ -23,7 +24,21 @@ const GROUPS = [
       assert.deepEqual([], lintErrors);
     },
   },
-  { type: 'css' },
+  {
+    type: 'styl',
+    async validate(filename, content) {
+      try {
+        await execFile('node_modules/.bin/stylint', [
+          filename,
+          '-c',
+          'stylint.json',
+        ]);
+      } catch (e) {
+        console.error(e);
+        throw e;
+      }
+    },
+  },
   {
     type: 'js',
     async validate(filename, content) {

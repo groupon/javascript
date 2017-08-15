@@ -3,16 +3,19 @@
 const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
+const { promisify } = require('util');
 
 const globby = require('globby');
 const CLIEngine = require('eslint').CLIEngine;
+
+const readFile = promisify(fs.readFile);
 
 const GROUPS = [
   { type: 'coffee' },
   { type: 'css' },
   {
     type: 'js',
-    validate(filename, content) {
+    async validate(filename, content) {
       const cliEngine = new CLIEngine({
         cwd: path.dirname(path.resolve(filename)),
         fix: true,
@@ -22,7 +25,7 @@ const GROUPS = [
 
       let expected = { errorCount: 0 };
       try {
-        expected = JSON.parse(fs.readFileSync(filename + '.json', 'utf8'));
+        expected = JSON.parse(await readFile(`${filename}.json`, 'utf8'));
       } catch (e) {
         if (e.code !== 'ENOENT') throw e;
       }
@@ -36,7 +39,7 @@ const GROUPS = [
 
       let expectedSource;
       try {
-        expectedSource = fs.readFileSync(filename.replace(/(\.\w+$)/, '.out$1'), 'utf8');
+        expectedSource = await readFile(filename.replace(/(\.\w+$)/, '.out$1'), 'utf8');
       } catch (e) {
         if (e.code !== 'ENOENT') throw e;
         expectedSource = content;
@@ -62,9 +65,9 @@ GROUPS.forEach((group) => {
           return;
         }
 
-        it('matches the expectations', () => {
-          const content = fs.readFileSync(testFile, 'utf8');
-          validate(testFile, content);
+        it('matches the expectations', async () => {
+          const content = await readFile(testFile, 'utf8');
+          return validate(testFile, content);
         });
       });
     });

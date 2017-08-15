@@ -1,6 +1,6 @@
 'use strict';
 
-function foo() { }
+function foo() {}
 
 const arr = [1, 2, 3];
 

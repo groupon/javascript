@@ -1,20 +1,25 @@
 'use strict';
 
-module.exports = {
-  parserOptions: {
-    sourceType: 'script',
-    ecmaVersion: 5,
+const opinions = require('./lib/rules/opinions');
+const conventions = require('./lib/rules/opinions');
+const mistakes = require('./lib/rules/mistakes');
+
+module.exports = Object.assign({
+  env: {
+    es6: false,
+    node: true,
   },
-  rules: {
-    'no-param-reassign': 0,
-    'prefer-rest-params': 0,
-    'no-underscore-dangle': [2, { allowAfterThis: true }],
-    strict: [2, 'global'],
-    'comma-dangle': [2, {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      functions: 'never',
-    }],
-    'prefer-spread': 0,
-  }
-};
+  parserOptions: {
+    ecmaVersion: 5,
+    sourceType: 'script',
+  },
+  plugins: ['import', 'node', 'prettier'],
+  rules: Object.assign(opinions, conventions, mistakes, {
+    // Additional opinions
+
+    // Additional conventions
+
+    // Additional mistakes
+    'node/no-unsupported-features': [2, { version: 4 }],
+  })
+});

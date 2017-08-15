@@ -13,6 +13,6 @@ module.exports = Object.assign(basics, {
     // Additional conventions
 
     // Additional mistakes
-    'node/no-unsupported-features': [2, { version: 6 }],
+    'node/no-unsupported-features': [2, { version: 8 }],
   })
 });

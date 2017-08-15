@@ -1,17 +1,28 @@
 'use strict';
 
 const assert = require('assert');
+const childProcess = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 
+const coffeelint = require('coffeelint');
 const globby = require('globby');
 const CLIEngine = require('eslint').CLIEngine;
 
+const CoffeeConfig = require('../coffee');
+
 const readFile = promisify(fs.readFile);
+const execFile = promisify(childProcess.execFile);
 
 const GROUPS = [
-  { type: 'coffee' },
+  {
+    type: 'coffee',
+    async validate(filename, content) {
+      const lintErrors = coffeelint.lint(content, CoffeeConfig);
+      assert.deepEqual([], lintErrors);
+    },
+  },
   { type: 'css' },
   {
     type: 'js',

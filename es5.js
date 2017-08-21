@@ -1,7 +1,7 @@
 'use strict';
 
 const opinions = require('./lib/rules/opinions');
-const conventions = require('./lib/rules/opinions');
+const conventions = require('./lib/rules/conventions');
 const mistakes = require('./lib/rules/mistakes');
 
 module.exports = Object.assign({
@@ -14,7 +14,7 @@ module.exports = Object.assign({
     sourceType: 'script',
   },
   plugins: ['import', 'node', 'prettier'],
-  rules: Object.assign(opinions, conventions, mistakes, {
+  rules: Object.assign({}, opinions, conventions, mistakes, {
     // Additional opinions
 
     // Additional conventions

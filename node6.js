@@ -16,4 +16,3 @@ module.exports = Object.assign(basics, {
     'node/no-unsupported-features': [2, { version: 6 }],
   })
 });
-console.log(module.exports.rules);

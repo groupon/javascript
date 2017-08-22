@@ -30,9 +30,20 @@ There's some minor differences that are mostly around our focus on sticking to f
 and a higher bar for rules that don't support `--fix`:
 If a rule isn't clearly preventing bugs, it has to support `--fix` to be enabled.
 
+To ensure good automation support, we're also dropping any rules that conflict with prettier's formatting.
+
 ### The Longer Answer
 
-*To be written.*
+We split our rules into three categories:
+
+* Mistakes: Things that should only appear because the developer made a mistake, 99% of the time.
+  If these errors aren't fixed, we wouldn't expect the program to work correctly.
+  This is the only category where we allow "error" even for rules that don't support `--fix`.
+* Conventions: Points out patterns that we believe could lead to confusion or maintenance issues down the line.
+  If a rule isn't fixable, there should be a high bar for it to be enabled to not cause noise.
+  But even if a rule is enabled, it may at most warn.
+* Opinions: Things that are arbitrary choices. Most whitespace and formatting rules fall into this category.
+  Everything in here must support `--fix` and shouldn't require human intervention.
 
 ## Groupon CoffeeScript Style Guide
 

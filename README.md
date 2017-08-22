@@ -7,24 +7,11 @@ It represents a best effort to capture the current practices.
 
 ### ES5 or ES2015?
 
-The general rule is:
-When writing code that is distributed via npm, we use ES5 code.
-All libraries should use `groupon-es5`.
-This ensures the code works consistently across all environments
-and doesn't require any compilation.
+The default lint style should be `groupon/nodeN` (e.g. `groupon/node4`),
+depending on which node version is the minimal version targeted.
 
-There are exceptions when libraries depend on features like generators
-that don't have a real ES5 equivalent.
-But in most cases it's possible to isolate that code
-into a separate library without polluting unrelated pieces of logic.
-
-For client-side code using ES2015 and [proposed upcoming features](https://github.com/tc39/ecma262#ecmascript) like object spread is encouraged.
-The default lint style should be `groupon` or `groupon-react` when using React.
-
-For server-side code running on node 4.x/6.x or higher,
-we try to restrict ourselves to the features that are natively supported.
-This simplifies tooling and improves startup times.
-The default lint style should be `groupon-node4`/`groupon-node6`.
+For client-side code we depend on `babel-preset-env` to ensure that both application-
+and library code is compiled down to whatever our targeted browsers support.
 
 ### Versioning and Publishing
 
@@ -39,82 +26,14 @@ This ensures that:
 
 Fortunately there already is a great and well-documented style guide for JavaScript over at [airbnb/javascript](https://github.com/airbnb/javascript).
 The short answer is: We stick to that.
-There is no difference between the airbnb and the Groupon rules for anything but legacy/ES5 mode.
+There's some minor differences that are mostly around our focus on sticking to features natively supported by node where possible
+and a higher bar for rules that don't support `--fix`:
+If a rule isn't clearly preventing bugs, it has to support `--fix` to be enabled.
 
 ### The Longer Answer
 
-#### Generally
+*To be written.*
 
-##### `no-underscore-dangle`
-
-Opinions on what "private state" means and how to use it vary.
-The [Airbnb guide](https://github.com/airbnb/javascript#naming--leading-underscore) comes down on the side of "if something can be inspected, it's not truly private".
-We explicitly allow and even encourage the use of underscored properties for private state.
-
-1. It's hard to define "can be inspected" in JavaScript, especially in node (there's always `vm.runInDebugContext`).
-2. There's immense value in having private state inspectable while debugging certain issues.
-
-We trust that users of libraries are aware that underscored properties are never part of the official interface
-and changes to underscored properties are not considered breaking changes.
-
-Using underscored properties outside of methods (e.g. not on `this`) is still considered an error.
-
-##### Short Identifiers
-
-The airbnb config allows identifiers of any length.
-This doesn't mean we encourage a bunch of `x` and `y`s over meaningful names.
-But there a situations where short identifiers are perfectly reasonable.
-
-Examples:
-* Mathematical functions like `(a, b) => a + b`
-* Known shorthands like `_` for lodash or underscore (especially in legacy mode where destructuring isn't available)
-
-When writing or reviewing code the rule of thumb is "clarity over brevity".
-But a linter isn't in the best position to judge clarity.
-
-#### `groupon-es5`
-
-##### Strict Statements
-
-We assume ES5 mode is used to lint code that will be running on node.js without any compilation steps.
-Which means we enforce a top-level `'use strict'` statement.
-
-##### Param reassignment is allowed
-
-Because ES5 has no way to specify default parameters,
-we allow param reassignment.
-The following is allowed:
-
-```js
-function f(options) {
-  options = options || {};
-}
-```
-
-This should be limited to default parameters.
-The following will pass the linter but should be avoided:
-
-```js
-function f(filename) {
-  filename = path.resolve(process.cwd(), filename);
-}
-```
-
-##### `var` not forced to top
-
-We encourage keeping declaration and initialization close to each other.
-Which means the following is allowed:
-
-```js
-function f() {
-  var x = calcX();
-  if (x <= 0) {
-    return 0;
-  }
-  var y = calcY();
-}
-```
-
-#### `coffeescript`
+## Groupon CoffeeScript Style Guide
 
 We include a single coffeelint config module - it allows globals appropriate for ES6, Mocha, and Node.JS coding.

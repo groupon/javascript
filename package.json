@@ -2,7 +2,7 @@
   "name": "eslint-config-groupon",
   "version": "4.1.4",
   "scripts": {
-    "pretest": "eslint --fix --config=./node8.js lib *.js",
+    "pretest": "eslint --fix --config=./node4.js lib *.js",
     "test": "mocha"
   },
   "license": "BSD-3-Clause",

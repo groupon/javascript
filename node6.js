@@ -14,5 +14,5 @@ module.exports = Object.assign(basics, {
 
     // Additional mistakes
     'node/no-unsupported-features': [2, { version: 6 }],
-  })
+  }),
 });

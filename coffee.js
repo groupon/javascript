@@ -24,12 +24,15 @@ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
+'use strict';
+
 module.exports = {
   arrow_spacing: {
-    level: 'warn'
+    level: 'warn',
   },
   camel_case_classes: {
-    level: 'error'
+    level: 'error',
   },
   check_scope: {
     module: 'coffeescope2',
@@ -37,30 +40,30 @@ module.exports = {
     environments: ['node', 'es6', 'mocha', 'browser'],
     overwrite: false,
     shadow_exceptions: ['err', 'error'],
-    hoist_local: false
+    hoist_local: false,
   },
   coffeescript_error: {
-    level: 'error'
+    level: 'error',
   },
   colon_assignment_spacing: {
     level: 'ignore',
     spacing: {
       left: 0,
-      right: 1
-    }
+      right: 1,
+    },
   },
   cyclomatic_complexity: {
     value: 10,
-    level: 'ignore'
+    level: 'ignore',
   },
   duplicate_key: {
-    level: 'error'
+    level: 'error',
   },
   empty_constructor_needs_parens: {
-    level: 'ignore'
+    level: 'ignore',
   },
   ensure_comprehensions: {
-    level: 'error'
+    level: 'error',
   },
   forbidden_keywords: {
     module: 'coffeelint-forbidden-keywords',
@@ -68,105 +71,105 @@ module.exports = {
       yes: 'true',
       on: 'true',
       no: 'false',
-      off: 'false'
+      off: 'false',
     },
-    level: 'error'
+    level: 'error',
   },
   indentation: {
     value: 2,
-    level: 'error'
+    level: 'error',
   },
   line_endings: {
     level: 'warn',
-    value: 'unix'
+    value: 'unix',
   },
   max_line_length: {
     value: 80,
     level: 'ignore',
-    limitComments: false
+    limitComments: false,
   },
   missing_fat_arrows: {
-    level: 'ignore'
+    level: 'ignore',
   },
   newlines_after_classes: {
     value: 1,
     // change to 'warn' when
     // https://github.com/clutchski/coffeelint/issues/518 fixed
-    level: 'ignore'
+    level: 'ignore',
   },
   no_backticks: {
-    level: 'error'
+    level: 'error',
   },
   no_debugger: {
-    level: 'error'
+    level: 'error',
   },
   no_empty_functions: {
-    level: 'ignore'
+    level: 'ignore',
   },
   no_empty_param_list: {
-    level: 'warn'
+    level: 'warn',
   },
   no_implicit_braces: {
     level: 'ignore',
-    strict: true
+    strict: true,
   },
   no_implicit_parens: {
     strict: true,
-    level: 'ignore'
+    level: 'ignore',
   },
   no_interpolation_in_single_quotes: {
-    level: 'warn'
+    level: 'warn',
   },
   no_mocha_only: {
     module: 'coffeelint-no-mocha-only',
-    level: 'error'
+    level: 'error',
   },
   no_nested_string_interpolation: {
-    level: 'ignore'
+    level: 'ignore',
   },
   no_plusplus: {
-    level: 'ignore'
+    level: 'ignore',
   },
   no_stand_alone_at: {
-    level: 'warn'
+    level: 'warn',
   },
   no_tabs: {
-    level: 'error'
+    level: 'error',
   },
   no_trailing_semicolons: {
-    level: 'error'
+    level: 'error',
   },
   no_trailing_whitespace: {
     level: 'error',
     allowed_in_comments: false,
-    allowed_in_empty_lines: false
+    allowed_in_empty_lines: false,
   },
   no_unnecessary_double_quotes: {
-    level: 'ignore'
+    level: 'ignore',
   },
   no_unnecessary_fat_arrows: {
-    level: 'error'
+    level: 'error',
   },
   non_empty_constructor_needs_parens: {
-    level: 'ignore'
+    level: 'ignore',
   },
   prefer_english_operator: {
     level: 'ignore',
-    doubleNotLevel: 'ignore'
+    doubleNotLevel: 'ignore',
   },
   space_operators: {
-    level: 'warn'
+    level: 'warn',
   },
   spacing_after_comma: {
-    level: 'warn'
+    level: 'warn',
   },
   transform_messes_up_line_numbers: {
-    level: 'ignore'
+    level: 'ignore',
   },
   use_strict: {
     module: 'coffeelint-use-strict',
     level: 'warn',
     allowGlobal: true,
-    requireGlobal: true
-  }
+    requireGlobal: true,
+  },
 };

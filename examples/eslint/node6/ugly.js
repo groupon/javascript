@@ -2,11 +2,11 @@
 'use strict';
 function f (){
 
-    const x =  42;
-     return 2 * x;;
+    var x =  42;
+     return 'The number is ' + x;;
 
 
 
 }
 
-f ()  ;
+f (/a   b/)  ;

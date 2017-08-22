@@ -2,7 +2,7 @@
 
 function f() {
   const x = 42;
-  return 2 * x;
+  return `The number is ${x}`;
 }
 
-f();
+f(/a {3}b/);

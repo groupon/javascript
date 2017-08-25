@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-groupon",
+  "name": "groupon-lint",
   "version": "4.1.4",
   "scripts": {
     "pretest": "eslint --fix --config=./node4.js lib *.js",
@@ -27,16 +27,14 @@
       ]
     }
   },
-  "dependencies": {
+  "devDependencies": {
     "coffeelint-forbidden-keywords": "~0.1.1",
     "coffeelint-no-mocha-only": "^1.0.0",
     "coffeelint-use-strict": "^1.0.0",
     "coffeescope2": "~0.4.2",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-prettier": "^2.2.0"
-  },
-  "devDependencies": {
+    "eslint-plugin-prettier": "^2.2.0",
     "coffee-script": "^1.10.0",
     "coffeelint": "^1.15.7",
     "eslint": "^4.5.0",

@@ -25,8 +25,9 @@ This ensures that:
 ## Groupon JavaScript Style Guide
 
 Fortunately there already is a great and well-documented style guide for JavaScript over at [airbnb/javascript](https://github.com/airbnb/javascript).
-The short answer is: We stick to that.
-There's some minor differences that are mostly around our focus on sticking to features natively supported by node where possible
+It definitely is worth a read and in many ways we're staying fairly close to it.
+
+There's some important differences that are mostly around our focus on sticking to features natively supported by node where possible
 and a higher bar for rules that don't support `--fix`:
 If a rule isn't clearly preventing bugs, it has to support `--fix` to be enabled.
 

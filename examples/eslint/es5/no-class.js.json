@@ -1,0 +1,7 @@
+{
+  "errorCount": 1,
+  "errors": {
+    "ruleId": null,
+    "message": "Parsing error: The keyword 'class' is reserved"
+  }
+}

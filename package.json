@@ -1,41 +1,56 @@
 {
-  "name": "groupon-styleguide",
-  "version": "3.2.0",
-  "private": true,
-  "scripts": {
-    "test": "eslint test/valid/eslint && coffeelint -q test/valid/coffeelint && stylint test/valid/stylint"
-  },
+  "name": "eslint-config-groupon",
+  "version": "4.1.4",
+  "description": "ESLint configuration used by Groupon",
   "license": "BSD-3-Clause",
+  "main": "node8.js",
+  "homepage": "https://github.com/groupon/javascript",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/groupon/javascript"
+    "url": "https://github.com/groupon/javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/groupon/javascript/issues"
+  },
+  "scripts": {
+    "pretest": "eslint --fix lib test",
+    "test": "mocha",
+    "posttest": "nlm verify"
+  },
+  "nlm": {
+    "license": {
+      "files": [
+        "lib"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint": "^4.5.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "assertive": "^2.1.0",
+    "eslint": "^4.5.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "globby": "^6.1.0",
+    "mocha": "^3.5.0",
+    "nlm": "^3.3.0",
+    "prettier": "^1.5.3"
   },
   "author": {
     "name": "Jan Krems",
     "email": "jan.krems@groupon.com"
   },
-  "dependencies": {
-    "coffeelint-config-groupon": "file:./packages/coffeelint-config-groupon",
-    "coffeelint-forbidden-keywords": "~0.1.1",
-    "coffeelint-no-mocha-only": "^1.0.0",
-    "coffeelint-use-strict": "^1.0.0",
-    "coffeescope2": "~0.4.2",
-    "eslint-config-groupon": "file:./packages/eslint-config-groupon",
-    "eslint-config-groupon-es5": "file:./packages/eslint-config-groupon-es5",
-    "eslint-config-groupon-node4": "file:./packages/eslint-config-groupon-node4",
-    "eslint-config-groupon-node6": "file:./packages/eslint-config-groupon-node6",
-    "eslint-config-groupon-react": "file:./packages/eslint-config-groupon-react",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^2.0.0",
-    "eslint-plugin-react": "^6.6.0",
-    "stylint-config-groupon": "file:./packages/stylint-config-groupon"
-  },
-  "devDependencies": {
-    "coffee-script": "^1.10.0",
-    "coffeelint": "^1.15.7",
-    "eslint": "^3.12.2",
-    "stylint": "^1.5.7",
-    "lerna": "2.0.0-beta.30"
+  "files": [
+    "*.js",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }

@@ -1,24 +1,22 @@
 {
   "name": "eslint-config-groupon",
   "version": "4.1.4",
+  "description": "ESLint configuration used by Groupon",
+  "license": "BSD-3-Clause",
+  "main": "node8.js",
+  "homepage": "https://github.com/groupon/javascript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/groupon/javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/groupon/javascript/issues"
+  },
   "scripts": {
-    "pretest": "eslint --fix --config=./node4.js lib *.js && eslint --fix --config=./node8.js test",
+    "pretest": "eslint --fix lib test",
     "test": "mocha",
     "posttest": "nlm verify"
   },
-  "license": "BSD-3-Clause",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/groupon/javascript"
-  },
-  "author": {
-    "name": "Jan Krems",
-    "email": "jan.krems@groupon.com"
-  },
-  "files": [
-    "*.js",
-    "lib"
-  ],
   "nlm": {
     "license": {
       "files": [
@@ -32,14 +30,27 @@
     "eslint-plugin-prettier": "^2.2.0",
     "eslint": "^4.5.0"
   },
+  "dependencies": {},
   "devDependencies": {
+    "assertive": "^2.1.0",
+    "eslint": "^4.5.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-prettier": "^2.2.0",
-    "eslint": "^4.5.0",
     "globby": "^6.1.0",
     "mocha": "^3.5.0",
     "nlm": "^3.3.0",
     "prettier": "^1.5.3"
+  },
+  "author": {
+    "name": "Jan Krems",
+    "email": "jan.krems@groupon.com"
+  },
+  "files": [
+    "*.js",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }

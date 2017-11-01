@@ -49,7 +49,7 @@ async function validate(filename, content) {
 }
 
 describe(`Linting using ESLint`, () => {
-  const files = globby.sync(`examples/**/*.js`, {
+  const files = globby.sync(`examples/**/*.{mjs,js}`, {
     ignore: 'examples/node_modules/**/*.*',
   });
 

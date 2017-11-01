@@ -1,3 +1,9 @@
+### 5.1.0
+
+* feat: support object spread and mjs - **[@jkrems](https://github.com/jkrems)** [#21](https://github.com/groupon/javascript/pull/21)
+  - [`344fe64`](https://github.com/groupon/javascript/commit/344fe6447c9b284d7d6edb7e088d98ae59342e33) **feat:** support object spread and mjs
+
+
 ### 5.0.0
 
 #### Breaking Changes

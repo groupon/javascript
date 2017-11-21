@@ -1,3 +1,9 @@
+### 5.1.1
+
+* fix: set prefer-template to off for es5 - **[@markowsiak](https://github.com/markowsiak)** [#22](https://github.com/groupon/javascript/pull/22)
+  - [`fb601e6`](https://github.com/groupon/javascript/commit/fb601e612117e262695386ab40f0cc63a15aaac1) **fix:** set prefer-template to off for es5
+
+
 ### 5.1.0
 
 * feat: support object spread and mjs - **[@jkrems](https://github.com/jkrems)** [#21](https://github.com/groupon/javascript/pull/21)

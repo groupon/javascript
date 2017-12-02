@@ -1,3 +1,10 @@
+### 5.2.0
+
+* resurrect `no-console` as `error` - **[@dbushong](https://github.com/dbushong)** [#23](https://github.com/groupon/javascript/pull/23)
+  - [`f66914e`](https://github.com/groupon/javascript/commit/f66914e8b3770d6c2538cb2af1a41cf19ee1b22c) **feat:** resurrect `no-console` as `error`
+  - [`57a5ff9`](https://github.com/groupon/javascript/commit/57a5ff94e63fe99e8d60174228779d583eace481) **chore:** add nvmrc for node8 dev compliance
+
+
 ### 5.1.1
 
 * fix: set prefer-template to off for es5 - **[@markowsiak](https://github.com/markowsiak)** [#22](https://github.com/groupon/javascript/pull/22)

@@ -30,6 +30,7 @@ async function validate(filename, content) {
   try {
     assert.equal(first.errorCount, expected.errorCount);
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.log(first.messages, expected.messages);
     throw e;
   }

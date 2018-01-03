@@ -1,3 +1,9 @@
+### 5.2.1
+
+* Apply latest nlm generator - **[@markowsiak](https://github.com/markowsiak)** [#24](https://github.com/groupon/javascript/pull/24)
+  - [`c6a3316`](https://github.com/groupon/javascript/commit/c6a3316472d23ce6ca801c09ef4a4230dd496c07) **chore:** apply latest generator
+
+
 ### 5.2.0
 
 * resurrect `no-console` as `error` - **[@dbushong](https://github.com/dbushong)** [#23](https://github.com/groupon/javascript/pull/23)

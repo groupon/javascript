@@ -33,14 +33,14 @@
   "dependencies": {},
   "devDependencies": {
     "assertive": "^2.1.0",
-    "eslint": "^4.5.0",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint": "^4.7.1",
+    "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-prettier": "^2.2.0",
     "globby": "^6.1.0",
     "mocha": "^3.5.0",
     "nlm": "^3.3.0",
-    "prettier": "^1.5.3"
+    "prettier": "^1.6.1"
   },
   "author": {
     "name": "Jan Krems",

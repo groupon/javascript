@@ -1,3 +1,9 @@
+### 5.3.0
+
+* apply === rule with null expection - **[@dbushong](https://github.com/dbushong)** [#25](https://github.com/groupon/javascript/pull/25)
+  - [`c727390`](https://github.com/groupon/javascript/commit/c72739026db07af40b79849a1f80ef7082984f3c) **feat:** apply === rule with null expection
+
+
 ### 5.2.1
 
 * Apply latest nlm generator - **[@markowsiak](https://github.com/markowsiak)** [#24](https://github.com/groupon/javascript/pull/24)

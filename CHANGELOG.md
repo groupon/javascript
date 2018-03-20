@@ -1,3 +1,9 @@
+### 5.4.0
+
+* resurrect prefer-arrow-callback - **[@dbushong](https://github.com/dbushong)** [#26](https://github.com/groupon/javascript/pull/26)
+  - [`7de330c`](https://github.com/groupon/javascript/commit/7de330cb724553d9686426e99786f0bf5f1fcccb) **feat:** resurrect prefer-arrow-callback
+
+
 ### 5.3.0
 
 * apply === rule with null expection - **[@dbushong](https://github.com/dbushong)** [#25](https://github.com/groupon/javascript/pull/25)

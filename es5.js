@@ -56,9 +56,11 @@ module.exports = Object.assign({
     'prefer-const': 'off',
     // See: https://eslint.org/docs/rules/prefer-template
     'prefer-template': 'off',
+    // See: https://eslint.org/docs/rules/prefer-arrow
+    'prefer-arrow-callback': 'off',
 
     // Additional mistakes
     'node/no-unsupported-features': [2, { version: 4 }],
-    
+
   }),
 });

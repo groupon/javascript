@@ -1,3 +1,9 @@
+### 5.4.1
+
+* Do not prefer arrow for ES5 - **[@jkrems](https://github.com/jkrems)** [#27](https://github.com/groupon/javascript/pull/27)
+  - [`380f1ae`](https://github.com/groupon/javascript/commit/380f1ae7729b9e8c519fb2315f17b0004fedc87a) **fix:** Do not prefer arrow for ES5
+
+
 ### 5.4.0
 
 * resurrect prefer-arrow-callback - **[@dbushong](https://github.com/dbushong)** [#26](https://github.com/groupon/javascript/pull/26)

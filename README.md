@@ -31,6 +31,10 @@ There's some important differences that are mostly around our focus on sticking 
 and a higher bar for rules that don't support `--fix`:
 If a rule isn't clearly preventing bugs, it has to support `--fix` to be enabled.
 
+Additionally, our file naming convention is `kabab-case`.  File names should be entirely in lowercase to avoid any renaming issues with file systems.
+
+Regarding code organization, we generally structure code by domain, not by layer (`todos/model.js` instead of `models/todo.js`).
+
 To ensure good automation support, we're also dropping any rules that conflict with prettier's formatting.
 
 ### The Longer Answer

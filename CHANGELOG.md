@@ -1,3 +1,9 @@
+### 5.4.2
+
+* docs: update file naming and organization - Closes #7 - **[@markowsiak](https://github.com/markowsiak)** [#28](https://github.com/groupon/javascript/pull/28)
+  - [`6593962`](https://github.com/groupon/javascript/commit/65939628e36ffe7c6896bb6febe2e8d3eb890719) **docs:** update filenaming and organization - Closes #7 - see: [#7](https://github.com/groupon/javascript/issues/7)
+
+
 ### 5.4.1
 
 * Do not prefer arrow for ES5 - **[@jkrems](https://github.com/jkrems)** [#27](https://github.com/groupon/javascript/pull/27)

@@ -45,7 +45,7 @@ module.exports = Object.assign({
     ecmaVersion: 5,
     sourceType: 'script',
   },
-  plugins: ['import', 'node', 'prettier'],
+  plugins: ['import', 'mocha', 'node', 'prettier'],
   rules: Object.assign({}, opinions, conventions, mistakes, {
     // Additional opinions
 

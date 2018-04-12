@@ -1,3 +1,17 @@
+### 6.0.0
+
+#### Breaking Changes
+
+adds eslint-plugin-mocha as a peerDep
+
+*See: [`897dbb0`](https://github.com/groupon/javascript/commit/897dbb015345977c40dcb5a8a5a6437a8627f51b)*
+
+#### Commits
+
+* add mocha lint checks - **[@dbushong](https://github.com/dbushong)** [#29](https://github.com/groupon/javascript/pull/29)
+  - [`897dbb0`](https://github.com/groupon/javascript/commit/897dbb015345977c40dcb5a8a5a6437a8627f51b) **feat:** add mocha lint checks
+
+
 ### 5.4.2
 
 * docs: update file naming and organization - Closes #7 - **[@markowsiak](https://github.com/markowsiak)** [#28](https://github.com/groupon/javascript/pull/28)

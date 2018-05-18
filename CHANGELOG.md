@@ -1,3 +1,9 @@
+### 6.1.0
+
+* add rule `consistent-return` - **[@dbushong](https://github.com/dbushong)** [#30](https://github.com/groupon/javascript/pull/30)
+  - [`cea8c21`](https://github.com/groupon/javascript/commit/cea8c212eee48a5683a5fe532a6e8247714f531b) **feat:** add rule `consistent-return`
+
+
 ### 6.0.0
 
 #### Breaking Changes

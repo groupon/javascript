@@ -1,3 +1,9 @@
+### 6.1.1
+
+* consistent-return: allow implicit undefined - **[@dbushong](https://github.com/dbushong)** [#31](https://github.com/groupon/javascript/pull/31)
+  - [`21b9ac3`](https://github.com/groupon/javascript/commit/21b9ac3ce66d9678d71874ef89899689ae100a2a) **fix:** consistent-return: allow implicit undefined
+
+
 ### 6.1.0
 
 * add rule `consistent-return` - **[@dbushong](https://github.com/dbushong)** [#30](https://github.com/groupon/javascript/pull/30)

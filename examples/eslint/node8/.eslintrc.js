@@ -10,7 +10,7 @@ module.exports = Object.assign({
       },
       rules: {
         'node/no-unsupported-features': [2, {
-          version: 8,
+          version: '8.3.0',
           ignores: ['modules'],
         }],
       },

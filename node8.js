@@ -45,6 +45,6 @@ module.exports = Object.assign(basics, {
     // Additional conventions
 
     // Additional mistakes
-    'node/no-unsupported-features': [2, { version: 8 }],
+    'node/no-unsupported-features': [2, { version: '8.3.0' }],
   }),
 });

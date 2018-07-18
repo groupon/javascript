@@ -51,7 +51,7 @@ async function validate(filename, content) {
 
 describe(`Linting using ESLint`, () => {
   const files = globby.sync(`examples/**/*.{mjs,js}`, {
-    ignore: 'examples/node_modules/**/*.*',
+    ignore: ['examples/node_modules/**/*.*'],
   });
 
   files.forEach(testFile => {

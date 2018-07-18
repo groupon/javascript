@@ -1,3 +1,18 @@
+### 7.0.0
+
+#### Breaking Changes
+
+This config now builds on top of ESLint 5. This
+also affects other `peerDependencies` like certain plugins.
+
+*See: [`986105d`](https://github.com/groupon/javascript/commit/986105d0ca9595d9d79c8b717999481eb6fd4478)*
+
+#### Commits
+
+* Upgrade to ESLint 5 - **[@jkrems](https://github.com/jkrems)** [#32](https://github.com/groupon/javascript/pull/32)
+  - [`986105d`](https://github.com/groupon/javascript/commit/986105d0ca9595d9d79c8b717999481eb6fd4478) **refactor:** Upgrade to ESLint 5
+
+
 ### 6.1.1
 
 * consistent-return: allow implicit undefined - **[@dbushong](https://github.com/dbushong)** [#31](https://github.com/groupon/javascript/pull/31)

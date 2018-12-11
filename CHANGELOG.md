@@ -1,3 +1,9 @@
+### 7.1.0
+
+* add object-shorthand as fixable error - **[@dbushong](https://github.com/dbushong)** [#35](https://github.com/groupon/javascript/pull/35)
+  - [`e7a0496`](https://github.com/groupon/javascript/commit/e7a04967fc6f4b906f5de0a93db62d39e22c65b8) **feat:** add object-shorthand as fixable error
+
+
 ### 7.0.0
 
 #### Breaking Changes

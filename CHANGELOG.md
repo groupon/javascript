@@ -1,3 +1,9 @@
+### 7.2.0
+
+* add support for groupon/node10 - **[@dbushong](https://github.com/dbushong)** [#36](https://github.com/groupon/javascript/pull/36)
+  - [`3be91a5`](https://github.com/groupon/javascript/commit/3be91a544b54dfd22cb549f11347695378bf3269) **feat:** add support for groupon/node10
+
+
 ### 7.1.0
 
 * add object-shorthand as fixable error - **[@dbushong](https://github.com/dbushong)** [#35](https://github.com/groupon/javascript/pull/35)

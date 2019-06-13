@@ -41,11 +41,12 @@ module.exports = Object.assign({
     es6: false,
     node: true,
   },
+  extends: ["plugin:jquery/deprecated"],
   parserOptions: {
     ecmaVersion: 5,
     sourceType: 'script',
   },
-  plugins: ['import', 'mocha', 'node', 'prettier'],
+  plugins: ['import', 'mocha', 'node', 'jquery', 'prettier'],
   rules: Object.assign({}, opinions, conventions, mistakes, {
     // Additional opinions
 

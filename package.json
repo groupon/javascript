@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-groupon",
-  "version": "7.2.0",
+  "version": "7.2.1",
   "description": "ESLint configuration used by Groupon",
   "license": "BSD-3-Clause",
   "main": "node8.js",

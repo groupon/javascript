@@ -1,3 +1,9 @@
+### 7.2.1
+
+* make peerDependencies looser - **[@dbushong](https://github.com/dbushong)** [#39](https://github.com/groupon/javascript/pull/39)
+  - [`9e61ef3`](https://github.com/groupon/javascript/commit/9e61ef344224a82a0af43c9eeb62769e584ce303) **fix:** make peerDependencies looser
+
+
 ### 7.2.0
 
 * add support for groupon/node10 - **[@dbushong](https://github.com/dbushong)** [#36](https://github.com/groupon/javascript/pull/36)

@@ -61,6 +61,5 @@ module.exports = Object.assign({
 
     // Additional mistakes
     'node/no-unsupported-features': [2, { version: 4 }],
-
   }),
 });

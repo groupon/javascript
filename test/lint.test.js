@@ -16,6 +16,7 @@ async function validate(filename, content) {
   const cliEngine = new CLIEngine({
     cwd: path.dirname(path.resolve(filename)),
     fix: true,
+    ignore: false,
   });
   const report = cliEngine.executeOnText(content, path.basename(filename));
   const first = report.results[0];
@@ -50,9 +51,7 @@ async function validate(filename, content) {
 }
 
 describe(`Linting using ESLint`, () => {
-  const files = globby.sync(`examples/**/*.{mjs,js}`, {
-    ignore: ['examples/node_modules/**/*.*'],
-  });
+  const files = globby.sync(`examples/**/*.{mjs,js}`);
 
   files.forEach(testFile => {
     describe(testFile, () => {

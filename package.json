@@ -3,7 +3,7 @@
   "version": "7.2.1",
   "description": "ESLint configuration used by Groupon",
   "license": "BSD-3-Clause",
-  "main": "node8.js",
+  "main": "lib/index.js",
   "homepage": "https://github.com/groupon/javascript",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "test:unit": "mocha"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=8.3.0"
   },
   "nlm": {
     "license": {
@@ -33,21 +33,20 @@
     }
   },
   "peerDependencies": {
-    "eslint-plugin-import": ">=2.8.0",
-    "eslint-plugin-mocha": ">=5.1.0",
-    "eslint-plugin-node": ">=8.0.1",
-    "eslint-plugin-prettier": ">=2.6.2",
+    "eslint-plugin-import": ">=2.18.2",
+    "eslint-plugin-mocha": ">=6.1.0",
+    "eslint-plugin-node": ">=10.0.0",
+    "eslint-plugin-prettier": ">=3.1.0",
     "eslint": "^6",
-    "prettier": ">=1.18.0"
+    "prettier": ">=1.18.2"
   },
   "dependencies": {},
   "devDependencies": {
     "assertive": "^3.0.0",
     "eslint": "^6.5.1",
-    "eslint-config-groupon": "^7.2.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-mocha": "^6.1.0",
-    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "globby": "^8.0.1",
     "mocha": "^6.2.0",

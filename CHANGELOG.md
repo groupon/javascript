@@ -1,3 +1,9 @@
+### 8.0.1
+
+* turn off node shebang test - **[@dbushong](https://github.com/dbushong)** [#41](https://github.com/groupon/javascript/pull/41)
+  - [`bacf7ca`](https://github.com/groupon/javascript/commit/bacf7caf3c1d9047692a877075efb671dd80c84b) **fix:** turn off node shebang test
+
+
 ### 8.0.0
 
 #### Breaking Changes

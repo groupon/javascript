@@ -1,3 +1,25 @@
+### 8.0.0
+
+#### Breaking Changes
+
+/nodeN entrypoints are gone; you must specify a
+`engines.node` section in your `package.json`; new defaults as specified
+by adding `extends: plugin:node/recommended`; dropped support for node 6
+and node 4 and es5
+
+*See: [`a207b40`](https://github.com/groupon/javascript/commit/a207b40a5e5cab1ee74fe7d6dd343aed7773265d)*
+
+#### Commits
+
+* Complete refactor + Node 12.x (and beyond) support - **[@dbushong](https://github.com/dbushong)** [#40](https://github.com/groupon/javascript/pull/40)
+  - [`20ce479`](https://github.com/groupon/javascript/commit/20ce4791f61d380a4011887b6ccdf70d8a53c454) **chore:** update the peerDeps
+  - [`02a5a35`](https://github.com/groupon/javascript/commit/02a5a35f5aa10aad704d55800a73bab0d498e357) **chore:** check in package-lock
+  - [`16297a4`](https://github.com/groupon/javascript/commit/16297a4b40d2196a50b764aaaae26878afae1049) **chore:** upgrade pkgs & builds
+  - [`a207b40`](https://github.com/groupon/javascript/commit/a207b40a5e5cab1ee74fe7d6dd343aed7773265d) **feat:** support all versions automatically
+  - [`6d3fd0f`](https://github.com/groupon/javascript/commit/6d3fd0f3161a18d7c53a8513b5a960f6bf20bea5) **fix:** tweak default node/* settings
+  - [`55315c9`](https://github.com/groupon/javascript/commit/55315c94c343ca253245145ab3322663e0de6715) **test:** add negative test for node supported
+
+
 ### 7.2.1
 
 * make peerDependencies looser - **[@dbushong](https://github.com/dbushong)** [#39](https://github.com/groupon/javascript/pull/39)

@@ -1,3 +1,11 @@
+### 8.1.0
+
+* feat: update rules & packages - **[@aaarichter](https://github.com/aaarichter)** [#42](https://github.com/groupon/javascript/pull/42)
+  - [`44bdfaf`](https://github.com/groupon/javascript/commit/44bdfaf6920e8a82996948657b6d717ceda8a942) **chore:** update / upgrade packages
+  - [`af4f8c3`](https://github.com/groupon/javascript/commit/af4f8c3d8a723fd49f787923ba690642df408e6d) **feat:** add no-self-assign rule
+  - [`c896339`](https://github.com/groupon/javascript/commit/c8963396a0ac29c13e2dffe37cd1c2018df73fd8) **fix:** set 8.5.0 as min required node version & adjust example
+
+
 ### 8.0.1
 
 * turn off node shebang test - **[@dbushong](https://github.com/dbushong)** [#41](https://github.com/groupon/javascript/pull/41)

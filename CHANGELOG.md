@@ -1,3 +1,9 @@
+### 8.1.1
+
+* chore(deps): bump acorn from 7.1.0 to 7.1.1 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#43](https://github.com/groupon/javascript/pull/43)
+  - [`289dab3`](https://github.com/groupon/javascript/commit/289dab330579637cfc0fe2144b1f39bf348a84f7) **chore:** bump acorn from 7.1.0 to 7.1.1 - see: [7](- [Commits](https://github.com/acornjs/acorn/compare/7)
+
+
 ### 8.1.0
 
 * feat: update rules & packages - **[@aaarichter](https://github.com/aaarichter)** [#42](https://github.com/groupon/javascript/pull/42)

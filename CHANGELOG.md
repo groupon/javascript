@@ -1,3 +1,18 @@
+### 9.0.0
+
+#### Breaking Changes
+
+requires prettier 2.x peerDep and will result in a
+lot of style changes around chained method invocations
+
+*See: [`6c004e6`](https://github.com/groupon/javascript/commit/6c004e6f51c2933e919448006e5c227f04adffdb)*
+
+#### Commits
+
+* upgrade to prettier2 - **[@dbushong](https://github.com/dbushong)** [#44](https://github.com/groupon/javascript/pull/44)
+  - [`6c004e6`](https://github.com/groupon/javascript/commit/6c004e6f51c2933e919448006e5c227f04adffdb) **feat:** upgrade to prettier2 - see: [2](See: https://prettier.io/blog/2020/03/21/2)
+
+
 ### 8.1.1
 
 * chore(deps): bump acorn from 7.1.0 to 7.1.1 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#43](https://github.com/groupon/javascript/pull/43)

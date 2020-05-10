@@ -2,7 +2,7 @@
 
 /* eslint-env mocha */
 
-const assert = require('assertive');
+const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
@@ -29,7 +29,7 @@ async function validate(filename, content) {
   }
 
   try {
-    assert.equal(expected.errorCount, first.errorCount);
+    assert.strictEqual(first.errorCount, expected.errorCount);
   } catch (e) {
     // eslint-disable-next-line no-console
     console.log(first.messages, expected.messages);
@@ -47,7 +47,7 @@ async function validate(filename, content) {
     expectedSource = content;
   }
 
-  assert.equal(expectedSource, first.output || content);
+  assert.strictEqual(first.output || content, expectedSource);
 }
 
 describe(`Linting using ESLint`, () => {

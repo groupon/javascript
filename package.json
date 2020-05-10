@@ -45,7 +45,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "assertive": "^5.0.1",
     "eslint": "^7.0.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-mocha": "^6.3.0",

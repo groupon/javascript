@@ -4,7 +4,7 @@
 
 🎉🏅 Thanks for helping us improve this project! 🙏
 
-This document outlines some of the practices we care about.
+This document outlines some practices we care about.
 If you have any questions or suggestions about the process,
 feel free to [open an issue](#reporting-issues)
 .
@@ -44,7 +44,7 @@ it might be better to follow the
 
 **Note:** If you're planning on making substantial changes,
 please [open an issue first to discuss your idea](#reporting-issues).
-Otherwise you might end up investing a lot of work
+Otherwise, you might end up investing a lot of work
 only to discover that it conflicts with plans the maintainers might have.
 
 The general steps for creating a pull request are:
@@ -117,7 +117,7 @@ different parts are required.
   - **perf:** Performance optimizations.
   - **test:** Fixing existing tests or adding missing ones.
       Just like with **style**, if you add tests to a feature you just
-      introduced in the previous commit, consider keeping the tests and the
+      introduced in the previous commit, consider keeping the tests, and the
       feature in the same commit instead.
   - **chore:** Changes to the project setup and tools, dependency bumps,
       and package-building house-keeping.  `chore` is not a judgement on how you
@@ -129,10 +129,10 @@ different parts are required.
 * `<subject>`: A [good git commit message subject][limit50].
   - Keep it brief. If possible the whole first line should have at most 50
       characters.
-  - Use imperative mood. "Create" instead of "creates" or "created".
+  - Use an imperative mood. "Create" instead of "creates" or "created".
   - No period (".") at the end.
 * `<body>`: Motivation for the change and any context required for understanding
-    the choices made.  Just like the subject, it should use imperative mood.
+    the choices made.  Just like the subject, it should use an imperative mood.
 * `<references>`: Any URLs relevant to the PR go here.  Use one line per URL and
     prefix it with the kind of relationship, e.g. "Closes: " or "See: ".  If you
     are referencing an issue in your commit body or PR description, never use

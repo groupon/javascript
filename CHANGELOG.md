@@ -1,3 +1,19 @@
+### 10.0.0 - 2020-05-12
+
+#### Breaking Changes
+
+- Upgrade to Eslint 7.x requires Node 10.12 or higher. See [eslint 7.x migration guide](https://eslint.org/docs/user-guide/migrating-to-7.0.0)
+- Drop Node 8 support
+
+*See: [`f4373ab`](https://github.com/groupon/javascript/commit/f4373ab016a3a153f70b5e8811f89ba3c8795d21)*
+
+#### Commits
+
+* refactor: upgrade to eslint 7.x & drop Node 8 support - **[@aaarichter](https://github.com/aaarichter)** [#45](https://github.com/groupon/javascript/pull/45)
+  - [`f4373ab`](https://github.com/groupon/javascript/commit/f4373ab016a3a153f70b5e8811f89ba3c8795d21) **refactor:** upgrade to Eslint 7.x & drop Node 8 support
+  - [`7f3cbde`](https://github.com/groupon/javascript/commit/7f3cbde1da113acc0230252771236f5cfe1700e9) **refactor:** use assert instead of assertive
+
+
 ### 9.0.0
 
 #### Breaking Changes

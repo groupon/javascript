@@ -1,3 +1,9 @@
+### 10.0.1 - 2020-07-20
+
+* chore(deps): bump lodash from 4.17.15 to 4.17.19 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#46](https://github.com/groupon/javascript/pull/46)
+  - [`a5bcdf0`](https://github.com/groupon/javascript/commit/a5bcdf0d16044ec30b60e8dd882ffde5b038024c) **chore:** bump lodash from 4.17.15 to 4.17.19 - see: [4](- [Commits](https://github.com/lodash/lodash/compare/4)
+
+
 ### 10.0.0 - 2020-05-12
 
 #### Breaking Changes

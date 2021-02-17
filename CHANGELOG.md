@@ -1,3 +1,9 @@
+### 10.0.2 - 2021-02-17
+
+* chore(deps): bump ini from 1.3.5 to 1.3.8 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#49](https://github.com/groupon/javascript/pull/49)
+  - [`4faeca0`](https://github.com/groupon/javascript/commit/4faeca071921515f753329189d42d0e68fbad1b2) **chore:** bump ini from 1.3.5 to 1.3.8 - see: [v1](- [Commits](https://github.com/isaacs/ini/compare/v1)
+
+
 ### 10.0.1 - 2020-07-20
 
 * chore(deps): bump lodash from 4.17.15 to 4.17.19 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#46](https://github.com/groupon/javascript/pull/46)

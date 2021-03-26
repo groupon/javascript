@@ -50,7 +50,7 @@ only to discover that it conflicts with plans the maintainers might have.
 The general steps for creating a pull request are:
 
 1. Create a branch for your change.  Always start your branch from the latest
-    `master`.  We recommend using `git wf start some-feature-name` by using
+    `main`.  We recommend using `git wf start some-feature-name` by using
     [git workflow][gitwf].  Run `npm install` to install the dependencies.
 1. If you're fixing a bug, be sure to write a test *first*.  That way you can
     validate that the test actually catches the bug and doesn't pass.

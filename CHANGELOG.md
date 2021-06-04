@@ -1,3 +1,14 @@
+### v10.0.4 (2021-06-04)
+<a id="v10.0.4"></a>
+#### 🔼 Dependencies
+
+* [#51](https://github.com/groupon/javascript/pull/51) chore(deps): bump hosted-git-info from 2.5.0 to 2.8.9 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### 🏡 Internal
+
+* [#52](https://github.com/groupon/javascript/pull/52) ci(actions): add GitHub actions ([@aaarichter](https://github.com/aaarichter))
+
+
 ### v10.0.3 (2021-03-26)
 
 #### 🏡 Internal

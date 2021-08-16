@@ -1,3 +1,10 @@
+### v10.0.5 (2021-08-16)
+<a id="v10.0.5"></a>
+#### 🔼 Dependencies
+
+* [#53](https://github.com/groupon/javascript/pull/53) chore(deps): bump path-parse from 1.0.6 to 1.0.7 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+
 ### v10.0.4 (2021-06-04)
 <a id="v10.0.4"></a>
 #### 🔼 Dependencies

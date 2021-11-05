@@ -1,3 +1,16 @@
+### v11.0.0 (2021-11-05)
+<a id="v11.0.0"></a>
+#### 💥 Breaking Changes
+
+[#54](https://github.com/groupon/javascript/pull/54) upgrades and typescript ([@dbushong](https://github.com/dbushong))
+
+requires bumping eslint-plugin-prettier to ^4
+
+#### 🏡 Internal
+
+* [#54](https://github.com/groupon/javascript/pull/54) upgrades and typescript ([@dbushong](https://github.com/dbushong))
+
+
 ### v10.0.5 (2021-08-16)
 <a id="v10.0.5"></a>
 #### 🔼 Dependencies

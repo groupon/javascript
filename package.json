@@ -36,20 +36,21 @@
     }
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=5.2.0",
+    "@typescript-eslint/parser": ">=5.2.0",
+    "eslint": "^7.28.0",
     "eslint-plugin-import": ">=2.18.2",
     "eslint-plugin-mocha": ">=6.1.0",
     "eslint-plugin-node": ">=11.0.0",
-    "eslint-plugin-prettier": ">=3.1.0",
-    "eslint": "^7",
+    "eslint-plugin-prettier": ">=4.0.0",
     "prettier": ">=2.0.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.27.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "globby": "^11.0.3",
     "mocha": "^8.4.0",
     "nlm": "^5.5.0",

@@ -8,10 +8,7 @@ It represents the best effort to capture the current practices.
 
 ## Writing NPM Packages
 
-### ES5 or ES2015?
-
-The default lint style should be `groupon/nodeN` (e.g. `groupon/node4`),
-depending on which node version is the minimal version targeted.
+### ES5 or ES2021?
 
 For client-side code we depend on `babel-preset-env` to ensure that both application-
 and library code is compiled down to whatever our targeted browsers support.
@@ -63,6 +60,8 @@ maintenance issues down the line.
 fall into this category.
   Everything in here must support `--fix` and shouldn't require human intervention.
 
-## Groupon CoffeeScript Style Guide
+## Groupon TypeScript Style Guide
 
-We include a single coffeelint config module - it allows globals appropriate for ES6, Mocha, and Node coding.
+You may have your `.eslintrc` extend `groupon/typescript` to get a set of
+configs based on our JavaScript lint configs, but with tweaks to work better
+with TypeScript (parsing, defaults, etc.).

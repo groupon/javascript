@@ -1,3 +1,10 @@
+### v11.0.2 (2021-11-08)
+<a id="v11.0.2"></a>
+#### 🐛 Bug Fixes
+
+* [`3bc4a85`](https://github.com/groupon/javascript/commit/3bc4a8595a2dd9117e7c244de8b8fc49a4f83038) fix: wrong typescript peerDep
+
+
 ### v11.0.1 (2021-11-08)
 <a id="v11.0.1"></a>
 #### 🏡 Internal

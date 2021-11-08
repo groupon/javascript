@@ -1,3 +1,10 @@
+### v11.0.1 (2021-11-08)
+<a id="v11.0.1"></a>
+#### 🏡 Internal
+
+* [#55](https://github.com/groupon/javascript/pull/55) modify ts lint rules to coexist better with js ([@dbushong](https://github.com/dbushong))
+
+
 ### v11.0.0 (2021-11-05)
 <a id="v11.0.0"></a>
 #### 💥 Breaking Changes

@@ -51,11 +51,12 @@ async function validate(filename, content) {
 }
 
 describe(`Linting using ESLint`, () => {
-  const files = globby.sync(`examples/**/*.{mjs,js}`);
+  const files = globby.sync(`examples/**/*.{mjs,js,ts}`);
 
   files.forEach(testFile => {
     describe(testFile, () => {
-      it('matches the expectations', async () => {
+      it('matches the expectations', async function () {
+        this.timeout(15000); // sometimes booting linters is slow
         const content = await readFile(testFile, 'utf8');
         return validate(testFile, content);
       });

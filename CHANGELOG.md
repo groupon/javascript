@@ -1,3 +1,10 @@
+### v11.0.3 (2021-11-22)
+<a id="v11.0.3"></a>
+#### 🏡 Internal
+
+* [#56](https://github.com/groupon/javascript/pull/56) lower peerDep req for typescript-eslint ([@dbushong](https://github.com/dbushong))
+
+
 ### v11.0.2 (2021-11-08)
 <a id="v11.0.2"></a>
 #### 🐛 Bug Fixes

@@ -1,3 +1,10 @@
+### v11.0.5 (2022-02-02)
+<a id="v11.0.5"></a>
+#### 🏡 Internal
+
+* [#59](https://github.com/groupon/javascript/pull/59) upgrades for npm audit ([@dbushong](https://github.com/dbushong))
+
+
 ### v11.0.4 (2022-02-02)
 <a id="v11.0.4"></a>
 #### 🏡 Internal

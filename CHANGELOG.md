@@ -1,3 +1,10 @@
+### v11.0.4 (2022-02-02)
+<a id="v11.0.4"></a>
+#### 🏡 Internal
+
+* [#57](https://github.com/groupon/javascript/pull/57) always use latest ecmaVersion ([@dbushong](https://github.com/dbushong))
+
+
 ### v11.0.3 (2021-11-22)
 <a id="v11.0.3"></a>
 #### 🏡 Internal

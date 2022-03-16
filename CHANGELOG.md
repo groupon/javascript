@@ -1,3 +1,10 @@
+### v11.0.6 (2022-03-16)
+<a id="v11.0.6"></a>
+#### 🏡 Internal
+
+* [#60](https://github.com/groupon/javascript/pull/60) rollback ecmaVersion to 2020 ([@dbushong](https://github.com/dbushong))
+
+
 ### v11.0.5 (2022-02-02)
 <a id="v11.0.5"></a>
 #### 🏡 Internal

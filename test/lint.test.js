@@ -51,7 +51,7 @@ async function validate(filename, content) {
 }
 
 describe(`Linting using ESLint`, () => {
-  const files = globby.sync(`examples/**/*.{mjs,js,ts}`);
+  const files = globby.sync(`examples/**/*.{mjs,js,ts,jsx}`);
 
   files.forEach(testFile => {
     describe(testFile, () => {

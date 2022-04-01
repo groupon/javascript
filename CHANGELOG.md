@@ -1,3 +1,10 @@
+### v11.1.0 (2022-04-01)
+<a id="v11.1.0"></a>
+#### 🏡 Internal
+
+* [#61](https://github.com/groupon/javascript/pull/61) ignore h & React in jsx files ([@dbushong](https://github.com/dbushong))
+
+
 ### v11.0.6 (2022-03-16)
 <a id="v11.0.6"></a>
 #### 🏡 Internal
